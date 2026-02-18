@@ -1,0 +1,61 @@
+.camera-view {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--bg-page);
+    border: var(--border);
+    overflow: hidden;
+}
+
+.camera-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleX(-1);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.camera-video-ready {
+    opacity: 1;
+}
+
+.camera-loading {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-sm);
+}
+
+.camera-error {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--bg-white);
+    border: var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    padding: var(--space-8);
+}
+
+.camera-error-icon {
+    font-size: 3rem;
+    opacity: 0.5;
+}
+
+.camera-error-text {
+    font-family: var(--font-mono);
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    text-align: center;
+    max-width: 300px;
+    line-height: 1.5;
+}

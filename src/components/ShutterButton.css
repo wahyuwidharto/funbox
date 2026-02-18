@@ -1,0 +1,35 @@
+.shutter-button {
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    border: var(--border);
+    background: var(--accent-pink);
+    color: var(--bg-white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    transition: all var(--transition-fast);
+}
+
+.shutter-button:hover:not(:disabled) {
+    transform: translate(-2px, -2px);
+    box-shadow: var(--shadow-hover);
+    background: #E91E63;
+}
+
+.shutter-button:active:not(:disabled) {
+    transform: translate(2px, 2px);
+    box-shadow: var(--shadow-active);
+}
+
+.shutter-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.shutter-icon {
+    width: 28px;
+    height: 28px;
+}

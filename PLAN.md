@@ -43,53 +43,61 @@ flowchart LR
 
 ## 2. UI / UX Design
 
-### 2.1 Design System (inspired by reference images)
+### 2.1 Design System — **Neo-Brutalist**
 
-The UI style is inspired by the attached "Bruddle" dashboard reference — a **dark, modern, premium** aesthetic.
+The UI uses a **neo-brutalist** style: thick black borders, flat vibrant color blocks, bold typography, sharp corners, and a playful-yet-structured aesthetic.
+
+**Key characteristics:**
+- **Thick black borders** (3px) around all cards/elements
+- **Flat, vibrant background colors** — no gradients or blur shadows
+- **Bold, geometric + monospace typography** with uppercase labels
+- **Light page background** with colorful card surfaces
+- **High contrast** — black text on colored backgrounds
+- **Sharp corners** (0–4px border radius)
+- **Offset box-shadows** (`4px 4px 0px #000`) for depth
 
 | Token | Value |
 |-------|-------|
-| **Background (primary)** | `#0D0D0D` (near black) |
-| **Background (card/surface)** | `#1A1A1A` |
-| **Background (elevated)** | `#252525` |
-| **Border** | `#2E2E2E` |
-| **Text primary** | `#FFFFFF` |
-| **Text secondary** | `#A0A0A0` |
-| **Accent primary** | `#A855F7` (purple) |
-| **Accent secondary** | `#F5C542` (gold/yellow) |
-| **Success** | `#22C55E` |
-| **Error/Danger** | `#EF4444` |
-| **Font** | `Inter` (Google Fonts) |
-| **Border radius** | `12px` (cards), `8px` (buttons) |
+| **Background (page)** | `#F5F0EB` (warm beige) |
+| **Card — Yellow** | `#FFD54F` |
+| **Card — Pink** | `#F8A4B8` |
+| **Card — Teal** | `#B2DFDB` |
+| **Card — White** | `#FFFFFF` |
+| **Border** | `#1A1A1A`, 3px solid |
+| **Text primary** | `#1A1A1A` |
+| **Text secondary** | `#555555` |
+| **CTA buttons** | Black bg, white text |
+| **Accent highlight** | `#FF4081` (hot pink) |
+| **Font (headings)** | `Space Grotesk` (bold, geometric) |
+| **Font (body/labels)** | `Space Mono` (monospace) |
+| **Border radius** | `0px` or `4px` |
+| **Box shadow** | `4px 4px 0px #1A1A1A` |
 
 ### 2.2 Page Layouts
 
 #### Welcome Page
-- Full-screen dark background
-- Centered card with FunBox logo, welcome text, and a large purple "Start" button
-- Subtle gradient or glow behind the logo
+- Light beige background, large centered card with yellow bg + thick black border
+- FunBox logo in bold uppercase, big display font
+- Welcome text in monospace, black "START" button with offset shadow
 
 #### How-To-Use Page
-- Horizontal stepper or stacked cards showing 3–4 steps
-- Each step has an icon, title, and short description
-- "Continue" button at the bottom
+- 4 step cards, each with different bg color (yellow, pink, teal, white)
+- Step number as uppercase monospace badge, icon + bold title + description
+- Black "LET'S GO" button
 
 #### Frame Selection Page
-- Two large preview cards side-by-side
-- **Card 1:** White frame preview (2×2 grid, white borders)
-- **Card 2:** Black frame preview (2×2 grid, black borders)
-- Selecting a card highlights it with a purple border/glow
-- "Next" button
+- Two large preview cards with thick black borders
+- Selected card gets accent color border + shadow shift
+- Black "NEXT" button
 
 #### Photo Capture Page (two-column layout)
-- **Left column (60%):** Live camera feed with large countdown overlay (5→0), shutter button below
-- **Right column (40%):** Frame preview showing captured photos filling in progressively. Each filled slot is clickable for retake (shows a small ✕ icon on hover). "Done" button appears when all 4 slots are filled.
+- **Left (60%):** Camera feed in thick-bordered container, bold countdown numbers, shutter button
+- **Right (40%):** Frame preview card, ✕ retake on hover, black "CONTINUE" button when all 4 filled
 
 #### Download / Print Page
-- Finalized framed image preview (centered)
-- QR code (large, scannable) linking to the download URL
-- "Print" button and "Start Over" button
-- Timer notice: "This photo will be available for 5 minutes"
+- Finalized image in thick-bordered card, QR code in white card
+- Black "DOWNLOAD" and "PRINT" buttons with offset shadows
+- Monospace countdown timer, "START OVER" link
 
 ---
 

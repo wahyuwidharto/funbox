@@ -1,0 +1,21 @@
+.qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.qr-wrapper {
+    background: var(--bg-white);
+    padding: 12px;
+    border: var(--border);
+    box-shadow: var(--shadow);
+}
+
+.qr-hint {
+    font-family: var(--font-mono);
+    font-size: var(--font-size-xs);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
